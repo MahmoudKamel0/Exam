@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Movie App</title>
+       <link rel="stylesheet" href="style sheet css/all.min.css">
+       <link rel="stylesheet" href="style sheet css/bootstrap.min.css">
+       <link rel="stylesheet" href="style sheet css/style.css">
+       <!-- Fonts -->
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+       <!-- start section aside -->
+       <aside class="d-flex position-fixed">
+              <nav class="navigation | d-flex flex-column justify-content-between">
+                     <!-- nav taps -->
+                     <menu>
+                            <li onclick="getNowPlayingListApi()">Now Playing</li>
+                            <li onclick="getPopularListApi()">Popular</li>
+                            <li onclick="getTopRatedListApi()">Top Rated</li>
+                            <li onclick="getTrendingApi()">Trending</li>
+                            <li onclick="getUpcomingListApi()">Upcoming</li>
+                            <li class="contact"><a href="#contact">Contact Us</a></li>
+                     </menu>
+
+                     <!-- footer -->
+                     <div class="footer">
+                            <div class="icons">
+                                   <i class="fa-brands fa-facebook-f"></i>
+                                   <i class="fa-brands fa-twitter"></i>
+                                   <i class="fa-solid fa-globe"></i>
+                            </div>
+
+                            <p>Copyright © 2022 All Rights Reserved.</p>
+                            <p>Created by <a href="">Mahmoud Kamel</a></p>
+                     </div>
+              </nav>
+
+              <!-- logo & button & icons -->
+              <div class="logo | d-flex flex-column align-items-center justify-content-between">
+                     <img class="logo" src="IMG/logo.png" alt="Logo Website" width="50">
+
+                     <button class="btn"><i class="fa-solid fa-align-justify"></i></button>
+                     <div class="icons | d-flex flex-column">
+                            <i class="fa-solid fa-globe"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                     </div>
+              </div>
+       </aside>
+
+
+
+       <!-- start main section -->
+       <main class="container text-center p-5">
+              <!-- search bar -->
+              <input id="search" type="search" placeholder="Search" autocomplete="cc-name">
+
+              <div class="row">
+   
+              <!-- items movies -->
+
+              </div>
+
+              <form id="contact" action="">
+                            <h2>Contact US</h2>
+
+                            <div class="row">
+                            <!-- name -->
+                            <div class="input | col-12 col-lg-6 position-relative">
+                                   <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                                   <span class="Invalid"></span>
+                            </div>
+                            
+                            <!-- email -->
+                            <div class="input | col-12 col-lg-6 position-relative">
+                                   <input oninput="checkEmailVialed()" type="email" name="email" id="email" placeholder="Enter Your Email">
+                                   <span class="Invalid"></span>
+                            </div>
+                            
+                            <!-- phone -->
+                            <div class="input | col-12 col-lg-6 position-relative">
+                                   <input oninput="checkPhoneVialed()" type="tel" name="phone" id="phone" placeholder="Enter Your Phone">
+                                   <span class="Invalid"></span>
+                            </div>
+
+                            <!-- age -->
+                            <div class="input | col-12 col-lg-6 position-relative">
+                                   <input oninput="checkAgeVialed()" type="text" name="age" id="age" placeholder="Enter Your Age">
+                                   <span class="Invalid"></span>
+                            </div>
+
+                            <!-- password -->
+                            <div class="input | col-12 col-lg-6 position-relative">
+                                   <input oninput="checkPasswordVialed()" type="password" name="password" id="password" placeholder="Enter Your Password">
+                                   <span class="Invalid"></span>
+                            </div>
+
+                            <!-- rePassword -->
+                            <div class="input | col-12 col-lg-6 position-relative">
+                                   <input oninput="checkRePasswordVialed()" type="password" name="rePassword" id="rePassword" placeholder="ReEnter Password">
+                                   <span class="Invalid"></span>
+                            </div>
+                            </div>
+                            <button type="button" class="btn">Submit</button>
+              </form>
+
+       </main>
+
+       <button class="btn-top | btn"><i class="fa-solid fa-arrow-up-long"></i></button>
+
+
+
+
+       
+       <!-- main scripts website -->
+       <script src="dist/jquery-3.7.1.min.js"></script>
+       <script src="dist/script.js"></script>
+</body>
+</html>
